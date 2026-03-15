@@ -1,0 +1,36 @@
+# ===== 数据文件（体积大，不入库） =====
+output/pool_*.jsonl
+output/train_round*.jsonl
+output/val.jsonl
+
+# selected_ids.json 记录已用ID，建议入库以便协作同步
+# 如不需要可取消注释下一行
+# output/selected_ids.json
+
+# ===== 模型与训练产物 =====
+outputs/
+cache/
+*.pt
+*.bin
+*.safetensors
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*.ipynb
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
